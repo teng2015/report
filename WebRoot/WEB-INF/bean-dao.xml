@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean id="uiFwUserDAO" class="com.gfan.report.frame.dao.UiFwUserDAOImpl">
+		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"></property>
+	</bean>
+    
+	<bean id="uiFwFunctionDAO" class="com.gfan.report.frame.dao.UiFwFunctionDAOImpl">
+		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"></property>
+	</bean>
+	
+	<bean id="uiFwModuleDAO" class="com.gfan.report.frame.dao.UiFwModuleDAOImpl">
+		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"></property>
+	</bean>
+	
+	<bean id="uiFwFunctionWidgetDAO" class="com.gfan.report.frame.dao.UiFwFunctionWidgetDAOImpl">
+		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"></property>
+	</bean>
+	
+	<bean id="repQueryDAO" class="com.gfan.report.frame.dao.RepQueryDAOImpl">
+		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"></property>
+	</bean>
+	
+	<bean id="reportDAO" class="com.gfan.report.frame.dao.ReportDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	
+	<bean id="repDictDAO" class="com.gfan.report.frame.dao.RepDictDAOImpl">
+		<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"></property>
+	</bean>
+</beans>
