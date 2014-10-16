@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ibatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Apache iBATIS Ibator Configuration 1.0//EN" "http://ibatis.apache.org/dtd/ibator-config_1_0.dtd" >
+<ibatorConfiguration>
+	<classPathEntry location="G:\Program Files\Workspaces\zjreport\webapp\WEB-INF\lib\mysql-connector-java-5.1.27.jar" />
+	<ibatorContext id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/report"
+			userId="root" password="tarena">
+		</jdbcConnection>
+		<javaModelGenerator targetPackage="com.gfan.report.report.module" targetProject="report" />
+		<sqlMapGenerator targetPackage="com.gfan.report.report.mapper" targetProject="report" />
+		<daoGenerator targetPackage="com.gfan.report.report.dao" targetProject="report" type="SPRING" />
+		<table tableName="REP_QUERY" domainObjectName="RepQuery">
+			<columnRenamingRule searchString="^f_" replaceString="" />
+		</table>
+	</ibatorContext>
+</ibatorConfiguration>
