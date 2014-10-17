@@ -4,8 +4,8 @@
 	<div class="navbar-inner">
 		<div class="container-fluid">
 			<!-- BEGIN LOGO -->
-			<a class="brand" href="index.html">
-			<img src="${base}/frame/media/image/logo.png" alt="logo" />
+			<a class="brand" href="javascript:void(0);" style="padding: 0px;">
+				<img src="${base}/frame/media/image/logo.png" alt="logo" />
 			</a>
 			<!-- END LOGO -->
 			<!-- BEGIN RESPONSIVE MENU TOGGLER -->
