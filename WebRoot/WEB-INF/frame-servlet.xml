@@ -26,6 +26,8 @@
 		<bean class="com.gfan.report.frame.intercepter.SessionIntercepter"></bean>
 	</mvc:interceptors>
 	
+ 	<import resource="classpath:applicationContext-shiro.xml" />
+	
 	<import resource="bean-dao.xml"/>
 
 	<context:property-placeholder location="classpath:jdbc.properties" />
