@@ -72,7 +72,7 @@ ul.page-sidebar-menu > li.active > a .selected {
   top:0px;
   width: 7px;
   height: 39px;
-  background-image: url("../../img/sidebar-menu-arrow-green.png");
+  background-image: url("../image/sidebar-menu-arrow-green.png");
 }  
 ul.page-sidebar-menu > li.active i {
   color: #fff !important;
@@ -117,10 +117,13 @@ ul.page-sidebar-menu > li > ul.sub-menu a .arrow.open:before {
 
 /* sub menu links effects */
 ul.page-sidebar-menu ul.sub-menu > li.active > a,
-ul.page-sidebar-menu ul.sub-menu > li > a:hover,
 ul.page-sidebar-menu ul.sub-menu > li.open > a {
   color: #818181 !important;
-  background: #73A0E9 !important; 
+  background: #BFD4F6 !important; 
+}
+ul.page-sidebar-menu ul.sub-menu > li > a:hover{
+  color: #818181 !important;
+  background: #EEEEEE !important; 	
 }
 ul.page-sidebar-menu ul.sub-menu > li > a i {
   color: #bbb !important;
