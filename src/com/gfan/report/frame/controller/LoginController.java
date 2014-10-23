@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.gfan.report.frame.module.UiFwUser;
 import com.gfan.report.frame.service.UserService;
+import com.gfan.user.model.User;
 
 @Controller
 @RequestMapping(value="/login")
@@ -23,7 +24,8 @@ public class LoginController {
 	
 	@RequestMapping(value="/enter")
 	public String enter(HttpSession session){
-		String loginId = "admin@gfan.com";
+		User suser = (User) session.getAttribute("user");
+		String loginId = suser.getUserName();
 		UiFwUser user = userService.getUser(loginId);
 		session.setAttribute("userInfo", user);
 		session.setAttribute("userModules", userService.getUserModule(user.getId()));
