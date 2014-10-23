@@ -25,7 +25,7 @@ $(document).ready(function() {
 		fNode = $("#" + fid + "_f_li");
 		mNode = $("#" + mid + "_m_dl");
 		var navContent = "<ul class='breadcrumb'>";
-		navContent += '<li><i class="icon-home"></i><a href="index.html">首页</a><i class="icon-angle-right"></i></li>';
+		navContent += '<li><i class="icon-home"></i><a href="index.gfan">首页</a><i class="icon-angle-right"></i></li>';
 		navContent += '<li><a href="#">'+mNode.find("span.title").text()+'</a><i class="icon-angle-right"></i></li>';
 		navContent += '<li><a href="#">'+fNode.find("a").text()+'</a></li>';
 		navContent += "</ul>";
